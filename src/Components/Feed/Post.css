@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+
 .post {
     display: flex;
     align-items: flex-start;
@@ -13,6 +15,13 @@
 .post__body > img {
     border-radius: 20px;
     width: 100%;
+}
+
+.post__headerText > h3 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
 }
 
 .post__footer {
@@ -33,8 +42,11 @@
 }
 
 .post__headerDescription {
+    font-family: 'Inter Tight', sans-serif;
+    margin-top: 3px;
     margin-bottom: 10px;
     font-size: 15px;
+    color: #3B3F43;
 }
 
 .post__avatar {
