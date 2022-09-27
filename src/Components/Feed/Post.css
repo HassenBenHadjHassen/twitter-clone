@@ -15,6 +15,11 @@
 .post__body > img {
     border-radius: 20px;
     width: 100%;
+    cursor: pointer;
+}
+
+.post__body > img.zoomed {
+    transform: scale(1.5);
 }
 
 .post__headerText > h3 {

@@ -12,6 +12,11 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import PublishIcon from '@mui/icons-material/Publish';
 
 const Post = forwardRef(({ displayName, username, verified, text, image, avatar }, ref) => {
+
+    function Zoom(event) {
+        const tgt = event.target;
+        tgt.classList.toggle('zoomed');
+    }
     return (
     <div className='post' ref={ref}>
         <div className="post__avatar">
@@ -30,7 +35,7 @@ const Post = forwardRef(({ displayName, username, verified, text, image, avatar 
                 </div>
             </div>
 
-            <img src={image} alt='' />
+            <img onClick={Zoom} src={image} alt='' />
 
             <div className="post__footer">
                 <ChatBubbleOutlineIcon fontSize="small" />
